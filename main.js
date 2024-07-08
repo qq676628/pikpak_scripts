@@ -10,19 +10,19 @@ async function main() {
   const password = response.data.password;
 
   console.log(username, password);
-  let pikPak = new PikPak(username, password, null, "35619652");
+  let pikPak = new PikPak(username, password, null, "48454837");
 
   pikPak
-    .authVerification()
-    .then(() => pikPak.getVerificationCode(mailjs))
-    .then(() => pikPak.authVerificationVerify())
-    .then(() => pikPak.authSignup())
-    .then(() => pikPak.userMe())
-    .then(() => pikPak.activityInvite())
-    .then(() => pikPak.activityInviteCode())
-    .then(() => pikPak.activationCode())
-    .then(() => pikPak.printUserInfo())
-    .catch((e) => console.log(e));
+    。authVerification()
+    。then(() => pikPak.getVerificationCode(mailjs))
+    。then(() => pikPak.authVerificationVerify())
+    。then(() => pikPak.authSignup())
+    。then(() => pikPak.userMe())
+    。then(() => pikPak.activityInvite())
+    。then(() => pikPak.activityInviteCode())
+    。then(() => pikPak.activationCode())
+    。then(() => pikPak.printUserInfo())
+    。catch((e) => console.log(e));
 
   // 登录
   // let pikPak = new PikPak('temp@temp.com', 'tempPassword', 'tempuuid');
